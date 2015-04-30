@@ -1,1 +1,21 @@
-Hello12
+multtable.php
+	+ min-multiplicand
+	+ max-multiplicand
+	+ min-multiplier
+	+ max-multiplier
+
+1. check min is less than or equal to max multiplicand
+2. min is less than or equal to min multiplicand
+3. print error message for each invalid input
+	"[min-multiplicant..] must be an integer"
+	"missing parameter [min-mutliplicant...]"
+4. produce a table that is (max-multiplicant - min-multiplicand + 2) tall
+	(max-multiplier -min-multiple + 2) wide
+
+table: 
+	left colum = multiplicand
+	top row = multiplier
+
+To accomplish the above task you will want to work with loops to dynamically 
+create rows and within each row, loop to create the cells. It should output as a 
+valid HTML5 document.
