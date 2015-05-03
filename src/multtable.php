@@ -21,6 +21,12 @@
 * ************************************************************* */
 ?>
 
+<!DOCTYPE html>
+<html>
+	<head><title> Multiplication Table </title>
+	</head>
+	<body>
+
 <?php
 
 	// assign values sent from html form
@@ -42,37 +48,57 @@
 	if ($minMultiplicand > $maxMultiplicand) {
 		$inputErrorCand = true;
 		echo "<br>Minimum multiplicand larger than maximum. <br>";
-		echo "<a href=' ".$returnAddress." '>Click here to try again</a>";
+		echo "<a href=' ".$returnAddress." '>Click here to try again</a> <br>";
 	}
 	if ($minMultiplier > $maxMultiplier) {
 		$inputErrorIer = true;
 		echo "<br>Minimum multiplier larger than maximum. <br>";
-		echo "<a href=' ".$returnAddress." '>Click here to try again</a>";
+		echo "<a href=' ".$returnAddress." '>Click here to try again</a> <br>";
 	}
 	
 	// checks if input values are numeric values
 	// (could be shorter if written as an array?)
-	if (!is_numeric($minMultiplier)) {
-		$inputErrorIer = true;
-		notInt($minMultiplier, $returnAddress);
-	}
-	if (!is_numeric($minMultiplicand)) {
-		$inputErrorIer = true;
-		notInt($minMultiplicand, $returnAddress);
-	}
-	if (!is_numeric($maxMultiplicand)) {
-		$inputErrorIer = true;
-		notInt($maxMultiplicand, $returnAddress);
-	}
-	if (!is_numeric($maxMultiplier)) {
-		$inputErrorIer = true;
-		notInt($maxMultiplier, $returnAddress);
+	if ($minMultiplicand && $minMultiplier && $maxMultiplicand && $maxMultiplier) {
+		if (!is_numeric($minMultiplier)) {
+			$inputErrorIer = true;
+			notInt($minMultiplier, $returnAddress);
+		}
+		if (!is_numeric($minMultiplicand)) {
+			$inputErrorCan = true;
+			notInt($minMultiplicand, $returnAddress);
+		}
+		if (!is_numeric($maxMultiplicand)) {
+			$inputErrorCan = true;
+			notInt($maxMultiplicand, $returnAddress);
+		}
+		if (!is_numeric($maxMultiplier)) {
+			$inputErrorIer = true;
+			notInt($maxMultiplier, $returnAddress);
+		}
 	}
 	
 	//not int output
 	function notInt(&$invalidInput, $returnAddressnotInt){		
 		echo "<br>I'm sorry, but $invalidInput is not an integer. <br>";
-		echo "<a href=' ".$returnAddressnotInt." '>Click here to try again</a>";		
+		echo "<a href=' ".$returnAddressnotInt." '>Click here to try again</a> <br>";		
+	}
+	
+	//test for input!
+	if (!$minMultiplicand) {
+		$inputErrorCand = true;
+		echo "Missing parameter min-multiplicand <br>";	
+	}
+	if (!$maxMultiplicand) {
+		$inputErrorCand = true;
+		echo "Missing parameter max-multiplicand <br>";	
+	}	
+	if (!$minMultiplier) {
+		$inputErrorIer = true;
+		echo "Missing parameter min-multiplier<br>";	
+	}	
+	if (!$maxMultiplier) {
+		$inputErrorIer = true;
+		echo "Missing parameter max-multiplier<br>";	
 	}
 	
 	if (!$inputErrorIer && !$inputErrorCand) {
@@ -96,4 +122,6 @@
 		echo "</table>";
 	} 
 ?>
+	</body>
+</html>
 
