@@ -1,0 +1,35 @@
+Start: Sun, 3 May 2015 15:07:38 +0900
+End: Sun, 3 May 2015 16:45:21 +0900
+Tasks: finished loopback.php the issue was converting json to string, parsing string, and putting it back together as js
+
+Start: Sun, 3 May 2015 11:43:26 +0900
+End: Sun, 3 May 2015 15:07:38 +0900
+Tasks: finished login.php
+
+Start: Sat, 2 May 2015 14:59:10 +0900
+End: Sat, 2 May 2015 16:59:10 +0900
+Tasks: Began work on loopback.php around 3pm. However, became stuck with issues of further testing with JSON. Switched to login
+
+Start: Thu, 30 Apr 2015 22:47:32 +0900
+End: Thu, 30 Apr 2015 23:34:16 +0900
+Tasks: Finished multtable.php
+
+Start: Thu, 30 Apr 2015 21:10:03 +0900
+End: Thu, 30 Apr 2015 22:47:32 +0900
+Tasks: multtable.php nearly finished
+
+Start:Thu, 30 Apr 2015 08:30:03 +0900
+End: Thu, 30 Apr 2015 10:00:03 +0900
+Tasks: Today, 830am-10am, constructed assign04's multable html file, practiced sending the data
+
+Start: Wed, 29 Apr 2015 09:27:33 +0900
+End: Wed, 29 Apr 2015 11:13:15 +0900
+Tasks: Practiced with php data types and basic string methods
+
+Start: Wed, 29 Apr 2015 09:01:45 +0900
+End: Wed, 29 Apr 2015 09:27:33 +0900
+Tasks: After reading through the documentation, fell flat on trying to install php. read on piazza about xampp. installi
+
+Start:
+End: Wed, 29 Apr 2015 08:59:18 +0900
+Tasks: Initial commit
